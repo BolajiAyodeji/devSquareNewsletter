@@ -4,12 +4,321 @@
 <head>
   <title>DevSquare Newsletter</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>Devcenter Square - Connecting Developers and Designers</title>
+  <link rel="shortcut icon" href="https://cdndc.net/dc-2018/img/dc/logo.png" type="image/x-icon">
+  <meta name="description"
+    content="Devcenter Square is the largest community of African software development talent. We created Devcenter Square in 2016 to connect more developers, designers, and project managers to an ever expanding network.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@DevCenterco">
+  <meta name="twitter:creator" content="@DevCenterco">
+  <meta name="twitter:title" content="Devcenter Square - Connecting Developers and Designers">
+  <meta name="twitter:description"
+    content="Devcenter Square is the largest community of African software development talent. We created Devcenter Square in 2016 to connect more developers, designers, and project managers to an ever expanding network.">
+  <meta name="twitter:image" content="https://cdndc.net/dc-2018/img/dc/meta.jpg">
+
+  <meta property="og:site_name" content="Devcenter">
+  <meta property="og:url" content="https://www.devcenter.co/community">
+  <meta property="og:title" content="Devcenter Square - Connecting Developers and Designers">
+  <meta property="og:description"
+    content="Devcenter Square is the largest community of African software development talent. We created Devcenter Square in 2016 to connect more developers, designers, and project managers to an ever expanding network.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdndc.net/dc-2018/img/dc/meta.jpg">
+  <meta property="og:image:secure_url" content="https://cdndc.net/dc-2018/img/dc/meta.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <link rel="stylesheet" href="css/app.css">
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
+  <header id="header">
+    <div class="wrapper nav-wrapper">
+      <div class="logo">
+        <div class="icon">
+          <a href="/">
+            <img src="img/devcenter.svg">
+          </a>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!">
+            <span></span>
+          </a>
+        </div>
+
+        <ul class="nav-list">
+          <li>
+            <a href="#!" class="show-drop-down" data-drop-down-id="drop-down-solution">Solutions
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="solutions/startups">Startups</a>
+              </li>
+              <li>
+                <a href="solutions/enterprise">Enterprise</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#!" class="show-drop-down" data-drop-down-id="drop-down-talent">Top Talent
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="top-talent/about-our-talent">About our talent</a>
+              </li>
+              <li>
+                <a href="top-talent/product-designer">Product Designer</a>
+              </li>
+              <li>
+                <a href="top-talent/software-developer">Software Developer</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#!" class="show-drop-down" data-drop-down-id="drop-down-community">Community
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="community">About the community</a>
+              </li>
+              <li>
+                <a href="http://devxpsession.devcenter.co/">Dev XP Sessions</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#!" class="show-drop-down" data-drop-down-id="drop-down-company">Company
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="company/why-devcenter">Why Devcenter?</a>
+              </li>
+              <li>
+                <a href="company/about-us">About us</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#!" class="show-drop-down" data-drop-down-id="drop-down-publication">Publications
+              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-down">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="https://blog.devcenter.co/" target="_blank">Developer Blog</a>
+              </li>
+              <li>
+                <a href="https://www.devcenter.co/theresource/" target="_blank">The Resource</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="header-action">
+          <a class="button stroked-button slaask-open-widget" href="">
+            <span> Chat with us </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="full-nav-holder" id="drop-down-solution">
+    <section id="solutions" class="call-to-action half-cta nav-half-cta">
+      <div class="wrapper">
+        <div class="grid">
+          <div class=" col-half">
+            <div class="sub-text cta cta-idea">
+              <a href="solutions/startups">
+                <h3>Startups</h3>
+                <p>We simplify rough ideas and build products users will love. Learn about our software design
+                  and development services for startups.</p>
+                <a class="button stroked-button" href="solutions/startups">Learn more</a>
+              </a>
+            </div>
+          </div>
+
+          <div class=" col-half">
+            <div class="sub-text cta cta-work">
+              <a href="solutions/enterprise">
+                <h3>Enterprise</h3>
+                <p>We develop and design software, manage software projects and place high-level developers
+                  on-contract. </p>
+                <a class="button stroked-button" href="solutions/enterprise">Learn more</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="full-nav-holder" id="drop-down-talent">
+    <section id="top-talent" class="call-to-action half-cta nav-half-cta">
+      <div class="wrapper">
+        <div class="grid">
+          <div class=" col-half">
+            <div class="sub-text cta cta-idea">
+              <a href="top-talent/product-designer">
+                <h3>Product Designer</h3>
+                <p>Expert product thinker designing beautiful, seamless, and intuitive software applications?</p>
+                <a class="button stroked-button" href="top-talent/product-designer">Learn more</a>
+              </a>
+            </div>
+          </div>
+
+          <div class=" col-half">
+            <div class="sub-text cta cta-work">
+              <a href="top-talent/software-developer">
+                <h3>Software Developer</h3>
+                <p>Experienced software engineer, coder with expertise across different technologies?</p>
+                <a class="button stroked-button" href="top-talent/software-developer">Learn more</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="full-nav-holder" id="drop-down-community">
+    <section id="community" class="call-to-action half-cta nav-half-cta">
+      <div class="wrapper">
+        <div class="grid">
+          <div class=" col-half">
+            <div class="sub-text cta cta-idea">
+              <a href="community">
+                <h3>About the community</h3>
+                <p>Devcenter Square is the largest community of African software development talent.</p>
+                <a class="button stroked-button" href="community">Learn more</a>
+              </a>
+            </div>
+          </div>
+
+          <div class=" col-half">
+            <div class="sub-text cta cta-work">
+              <a href="http://devxpsession.devcenter.co/" target="_blank">
+                <h3>Dev XP Sessions</h3>
+                <p>Dev XP Sessions are online AMAs featuring industry experts who interact with and answer
+                  questions from the community. </p>
+                <a class="button stroked-button" href="http://devxpsession.devcenter.co/" target="_blank">Learn
+                  more</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="full-nav-holder" id="drop-down-company">
+    <section id="company" class="call-to-action half-cta nav-half-cta">
+      <div class="wrapper">
+        <div class="grid">
+          <div class=" col-half">
+            <div class="sub-text cta cta-idea">
+              <a href="company/why-devcenter">
+                <h3>Why Devecenter?</h3>
+                <p>We're just as passionate about our work as you are about your idea. Here's why Devcenter
+                  should be your Software partner.</p>
+                <a class="button stroked-button" href="company/why-devcenter">Learn more</a>
+              </a>
+            </div>
+          </div>
+
+          <div class=" col-half">
+            <div class="sub-text cta cta-work">
+              <a href="company/about-us">
+                <h3>About us</h3>
+                <p>Learn about Devcenter's mission to grow and connect talent communities in Africa. We're
+                  starting with Software Development.</p>
+                <a class="button stroked-button" href="company/about-us">Learn more</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="full-nav-holder" id="drop-down-publication">
+    <section id="publication" class="call-to-action half-cta nav-half-cta">
+      <div class="wrapper">
+        <div class="grid">
+          <div class=" col-half">
+            <div class="sub-text cta cta-idea">
+              <a href="https://blog.devcenter.co/" target="_blank">
+                <h3>Developer Blog</h3>
+                <p>Building Africa’s Finest Software Development Network.</p>
+                <a class="button stroked-button" href="https://blog.devcenter.co/" target="_blank">View blog</a>
+              </a>
+            </div>
+          </div>
+
+          <div class=" col-half">
+            <div class="sub-text cta cta-work">
+              <a href="https://www.devcenter.co/theresource/" target="_blank">
+                <h3>The Resource</h3>
+                <p>Advice on running a technology business in Africa</p>
+                <a class="button stroked-button" href="https://www.devcenter.co/theresource/" target="_blank">View
+                  the resource</a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="hero hero-small bg-light">
+    <div class="wrapper">
+      <div class="hero-content grid">
+        <div class="centered-text text-center" data-aos="fade-up">
+          <h1>Connecting Developers and Designers - Devcenter Square</h1>
+          <p>We created Devcenter Square in 2016 to connect more developers and designers to an ever expanding
+            network to foster software development excellence.</p>
+          <a class="button" href="https://devcenter-square-slack.herokuapp.com/" target="blank">Join the community</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <div id="sendgrid-subscription-widget" class="sendgrid-subscription-widget"
     data-emailerror="Please enter a valid email address" data-nameerror="Please enter your name"
