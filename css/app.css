@@ -3620,36 +3620,12 @@ span.black {
 
 
 .sendgrid-subscription-widget input {
+  border-radius: 5px;
   padding: .5em .5em .55em;
   font-size: .8em;
   font-family: sans-serif
 }
 
-.sendgrid-subscription-widget #sg_signup_first_name,
-.sendgrid-subscription-widget #sg_signup_last_name {
-  margin-right: .5em
-}
-
-.sendgrid-subscription-widget #sg-submit-btn {
-  display: inline-block;
-  color: #444;
-  border: 1px solid #ccc;
-  background: #ddd;
-  box-shadow: 0 0 5px -1px rgba(0, 0, 0, .2);
-  cursor: pointer;
-  vertical-align: middle;
-  max-width: 100px;
-  padding: .5em;
-  margin: 0 .4em;
-  text-align: center;
-  font-size: .9em;
-  font-family: sans-serif
-}
-
-.sendgrid-subscription-widget #sg-submit-btn:active {
-  color: #8e8b8b;
-  box-shadow: 0 0 5px -1px rgba(0, 0, 0, .6)
-}
 
 .sendgrid-subscription-widget .response {
   display: none;
@@ -3680,8 +3656,4 @@ span.black {
 
 .sendgrid-subscription-widget .sg_custom {
   margin-left: 5px;
-}
-
-.sendgrid-subscription-widget .checkbox_label {
-  padding-left: 3px;
 }
