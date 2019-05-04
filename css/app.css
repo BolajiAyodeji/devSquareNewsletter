@@ -90,8 +90,8 @@ label {
 }
 .error,
 .errorText {
-  margin: 5px 0 0 0;
-  padding: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
   font-size: 14px;
   color: #6b0505;
   background-color: #f4bfbf;
@@ -103,8 +103,8 @@ label {
   background: #e4f3d4;
   font-size: 14px;
   color: #5ca000;
-  margin: 10px 0;
-  padding: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
   font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
 }
 .success a {
@@ -168,11 +168,11 @@ input[type=radio] {
 /* Customizable Theme Bits */
 
 body {
-  background-color: #20242B;
+  background-color: #f6fafd;
 }
 
 h1.title {
-  font-size: 36px;
+  font-size: 30px;
   line-height: 36px;
   margin: 20px 0;
   font-family: Futura, 'Century Gothic', 'Apple Gothic', sans-serif;
@@ -206,7 +206,6 @@ label,
   color: #111;
 }
 .tl-tab-content {
-  background: #fff;
   margin-bottom: -204px;
   height: 240px;
   position: relative;
@@ -270,18 +269,10 @@ label,
 }
 
 
-.sendgrid-subscription-widget input {
-  border-radius: 5px;
-  padding: .5em .5em .55em;
-  font-size: .8em;
-  font-family: sans-serif
-}
-
-
 .sendgrid-subscription-widget .response {
   display: none;
   font-family: sans-serif;
-  font-size: .8em
+  font-size: .8em;
 }
 
 .sendgrid-subscription-widget .success {
