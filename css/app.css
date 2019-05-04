@@ -61,6 +61,7 @@ form {
   font: 16px/20px'Helvetica', Arial, sans-serif;
   display: block;
   padding: 6px 0 10px 0;
+  margin-top: 10px;
 }
 label {
   clear: both;
@@ -176,7 +177,7 @@ body {
 h1.title {
   font-size: 30px;
   line-height: 36px;
-  margin: 20px 0;
+  margin: 15px 0;
   font-family: "Akkurat", sans-serif;
   color: #111111;
 }
