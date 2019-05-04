@@ -171,8 +171,6 @@ body {
   background-color: #20242B;
 }
 
-
-
 h1.title {
   font-size: 36px;
   line-height: 36px;
@@ -213,9 +211,6 @@ label,
   height: 240px;
   position: relative;
   background: rgba(255, 255, 255, .8);
-}
-.tl-tab:hover .tl-tab-content {
-  margin-bottom: 0;
 }
 .tl-tab-content:before {
   position: absolute;
