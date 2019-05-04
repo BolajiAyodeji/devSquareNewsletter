@@ -1,6 +1,8 @@
+@import "type.css";
 
 body {
-  font: 15px/24px 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: "Akkurat", sans-serif;
+  font: 15px/24px;
   min-width: 400px;
   margin: 0;
   padding: 75px 0 0 0;
@@ -105,7 +107,7 @@ label {
   color: #5ca000;
   margin-bottom: 5px;
   padding: 8px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: "Akkurat", sans-serif;
 }
 .success a {
   color: #5ca000;
@@ -175,22 +177,22 @@ h1.title {
   font-size: 30px;
   line-height: 36px;
   margin: 20px 0;
-  font-family: Futura, 'Century Gothic', 'Apple Gothic', sans-serif;
+  font-family: "Akkurat", sans-serif;
   color: #111111;
 }
 .byline {
   font-size: 18px;
-  font-family: Futura, 'Century Gothic', 'Apple Gothic', sans-serif;
+  font-family: "Akkurat", sans-serif;
   color: #111111;
 }
 .description,
 label,
 .fake-label {
-  font-family: Futura, 'Century Gothic', 'Apple Gothic', sans-serif;
+  font-family: "Akkurat", sans-serif;
   color: #111111;
 }
 .button {
-  font-family: Futura, 'Century Gothic', 'Apple Gothic', sans-serif;
+  font-family: "Akkurat", sans-serif;
   color: #FFFFFF;
   background-color: #333333;
 }
@@ -202,7 +204,7 @@ label,
   left: 0;
   width: 100%;
   text-align: center;
-  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+  font-family: "Akkurat", sans-serif;
   color: #111;
 }
 .tl-tab-content {
