@@ -55,8 +55,7 @@
           <div class="email-group">
             <label for="email" class="sr-only"> Email </label>
             <input type="email" id="sg_email" name="sg_email" placeholder="email@example.com" required>
-            <button onclick=" load = setInterval(show, 100)" id="sg-submit-btn" class="button" type="submit">
-              Subscribe</button>
+            <button id="sg-submit-btn" class="button" type="submit"> Subscribe</button>
             <div id="loading"></div>
           </div>
       </div>
@@ -74,14 +73,23 @@
 
   <script>
     const dots = document.getElementById('loading');
+    const input = document.getElementById('sg_email');
+    const btn = document.getElementById('sg-submit-btn');
 
     dots.style.visibility = 'hidden';
 
+    btn.addEventListener('click', show);
+
     function show() {
       dots.style.visibility = 'visible';
+
+      setTimeout(() => {
+        dots.style.visibility = 'hidden';
+        input.value = '';
+      }, 1500);
+      show();
     }
 
-    clearTimeout(load);
   </script>
 </body>
 
