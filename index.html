@@ -50,12 +50,13 @@
       <div id="sendgrid-subscription-widget" class="sendgrid-subscription-widget"
         data-emailerror="Please enter a valid email address" data-nameerror="Please enter your name"
         data-checkboxerror="Please tick the box to accept our conditions">
-        <form id="sg-widget" data-token="230a6972eff4e75e3005845347a15885" onsubmit="return false;">
+        <form id="sg-widget" data-token="4b6e247c552e663c6cc23f39c70236ac" onsubmit="return false;">
           <div class="sg-response" id="sg-response"></div>
           <div class="email-group">
             <label for="email" class="sr-only"> Email </label>
             <input type="email" id="sg_email" name="sg_email" placeholder="email@example.com" required>
-            <button onclick="show()" id="sg-submit-btn" class="button" type="submit"> Subscribe</button>
+            <button onclick=" load = setInterval(show, 100)" id="sg-submit-btn" class="button" type="submit">
+              Subscribe</button>
             <div id="loading"></div>
           </div>
       </div>
@@ -72,9 +73,15 @@
   </div>
 
   <script>
+    const dots = document.getElementById('loading');
+
+    dots.style.visibility = 'hidden';
+
     function show() {
-      document.getElementById('loading').innerHTML = '•••'
+      dots.style.visibility = 'visible';
     }
+
+    clearTimeout(load);
   </script>
 </body>
 
